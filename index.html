@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/jpg" href="assets/img/favicon.jpg">
+        <title>Veterinaria San Blas</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <!-- Enlace a Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+    <!-- Navbar -->
+    <div>
+        <nav id="barra_navegacion" class="navbar navbar-expand-lg navbar-custom">
+            <div class="container">
+                
+                <!-- Logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="assets/img/logo.png" alt="Logo" width="60px">
+                </a>
+
+                <!-- Botón del toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Elementos de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">    
+                    <ul class="navbar-nav">
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="">Inicio</a>
+                        </li>
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="">Servicios</a>
+                        </li>                         
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="">Nosotros</a>
+                        </li>                                                                  
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="">Contacto</a>
+                        </li>                                            
+                        <ul class="navbar-nav">
+                            <li class="nav-item p-3">
+                                <a class="nav-link nav-link-box" href="">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a class="nav-link nav-link-box" href="">Registrarse</a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>    
+    <!-- Header -->
+    <div>
+        <header>        
+            <!-- Carrusel de imágenes -->
+            <div id="carrusel_header" class="carousel slide" data-bs-ride="carousel">
+      
+                <!-- Indicadores de imágenes -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carrusel_header" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carrusel_header" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carrusel_header" data-bs-slide-to="2"></button>
+                </div>
+          
+                <!-- Contenido de la diapositiva -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img id="imagen_carrusel" src="assets/img/header1.jpg" alt="header1" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="imagen_carrusel" src="assets/img/header2.jpeg" alt="header2" class="d-block" style="width:100%">
+                    </div>
+                    <div class="carousel-item">
+                        <img id="imagen_carrusel" src="assets/img/header3.jpg" alt="header3" class="d-block" style="width:100%">
+                    </div>
+                </div>
+          
+                <!-- Controles laterales -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carrusel_header" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carrusel_header" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </header>
+    </div>
+    
+    <!-- Contenido de la página -->
+    <div>
+        <content id="bienvenida">
+            
+                <div class="container">
+                
+                    <h2>Veterinaria San Blas</h2>
+                    <hr><br>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt quam vel nisi ultricies, eu placerat felis sodales. Integer auctor arcu vel magna commodo, sit amet lobortis nulla fermentum. Nullam euismod sapien non tortor sagittis, eget sodales dui facilisis. Phasellus eu lorem quis ligula cursus auctor eget a erat. Vestibulum nec nulla nec arcu faucibus congue. Vestibulum sodales sollicitudin neque, sit amet condimentum tortor pharetra sit amet. Fusce id odio felis. Integer non pharetra turpis.</p>
+                    
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt quam vel nisi ultricies, eu placerat felis sodales. Integer auctor arcu vel magna commodo, sit amet lobortis nulla fermentum. Nullam euismod sapien non tortor sagittis, eget sodales dui facilisis. Phasellus eu lorem quis ligula cursus auctor eget a erat. Vestibulum nec nulla nec arcu faucibus congue. Vestibulum sodales sollicitudin neque, sit amet condimentum tortor pharetra sit amet. Fusce id odio felis. Integer non pharetra turpis.</p>
+                </div>
+            
+        </content>
+    </div>
+
+    <!-- Footer de la página-->
+    <div id="pie_pagina">
+        <footer>
+            <div class="container">
+                
+                <!-- Iconos de redes sociales -->
+                <div id="redes_sociales">
+                    <span href="#" class="fa fa-facebook"></span>
+                    <span href="#" class="fa fa-whatsapp"></span>
+                    <span href="#" class="fa fa-instagram"></span>
+                </div>
+                <br><br>
+                <span>© 2024 Veterinaria San Blas</span>
+            </div>
+        </footer>
+    </div>
+     
+    <!-- JavaScript-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="assets/js/script.js"></script>        
+
+  </body>
+</html>
