@@ -4,6 +4,10 @@
   border: 0px;
 }
 
+body {
+  font-family: "Ubuntu", sans-serif;
+}
+
 #logo {
   margin-left: 35px;  
   margin-right: 100px;
@@ -35,13 +39,19 @@
   width: 130px;
 }
 
+.navbar-custom .nav-link:hover {
+  background-color: lightgray;
+  border-color: lightgray;
+  border-radius: 5px;
+}
+
 #imagen_carrusel {
   height: 300px;
 }
 
 #bienvenida {
   font-family: "Ubuntu", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   font-style: normal;
 }
@@ -56,6 +66,65 @@
   text-align: center;
 }
 
+#inicio_sesion {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#inicio_sesion .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#inicio_sesion h2 {
+  text-align: center;
+}
+
+#inicio_sesion .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#inicio_sesion .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#newsletter {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#newsletter .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#newsletter h2 {
+  text-align: center;
+}
+
+#newsletter p {
+  text-align: justify;
+}
+
+#newsletter .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#newsletter .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+
 #pie_pagina {
   color: white;
   background-color: #7264C9;
@@ -65,6 +134,12 @@
   font-size: 14px;
   font-weight: 400;
   font-style: normal;
+}
+
+#pie_pagina a {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  text-decoration: none;
 }
 
 #redes_sociales .fa {
