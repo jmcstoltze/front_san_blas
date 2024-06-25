@@ -66,6 +66,26 @@ body {
   text-align: center;
 }
 
+#bienvenida .custom-width {
+  width: 200px;
+}
+
+#bienvenida .custom-card {
+  align-items: center;
+}
+
+#bienvenida .custom-card hr {
+  width: 100%; /* Para que no desaparezca el hr*/
+}
+
+#bienvenida .no-underline {
+  text-decoration: none;
+}
+
+#bienvenida .no-underline:hover {
+  text-decoration: none;
+}
+
 #inicio_sesion {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
@@ -89,6 +109,97 @@ body {
 }
 
 #inicio_sesion .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#registro {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#registro .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#registro h2 {
+  text-align: center;
+}
+
+#registro .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#registro .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#dashboard {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#dashboard .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#dashboard h2 {
+  text-align: center;
+}
+
+#dashboard .custom-width {
+  width: 183px;
+}
+
+#dashboard .custom-card {
+  align-items: center;
+}
+
+#dashboard .custom-card hr {
+  width: 100%; /* Para que no desaparezca el hr*/
+}
+
+#dashboard .no-underline {
+  text-decoration: none;
+}
+
+#dashboard .no-underline:hover {
+  text-decoration: none;
+}
+
+#registro_mascota {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#registro_mascota .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#registro_mascota h2 {
+  text-align: center;
+}
+
+#registro_mascota .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#registro_mascota .btn:hover {
   background-color: #5f9e3e;
   border-color: #5f9e3e;
 }
@@ -152,8 +263,8 @@ body {
 @media (max-width: 575.98px) {
 
   #bienvenida .container {
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 50px !important;
+    padding-right: 50px !important;
   }
 
   #pie_pagina .container {

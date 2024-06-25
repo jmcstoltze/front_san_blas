@@ -38,19 +38,19 @@
                         </li>
                         <li class="nav-item p-3">
                             <a class="nav-link" href="">Reservar</a>
-                        </li>                                                                                       
+                        </li>                         
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="../views/contacto.html">Vacunatorio</a>
-                        </li>
+                            <a class="nav-link" href="">Vacunatorio</a>
+                        </li>                                                                  
                         <li class="nav-item p-3">
                             <a class="nav-link" href="../views/contacto.html">Contacto</a>
-                        </li>                                             
+                        </li>                                            
                         <ul class="navbar-nav">
                             <li class="nav-item p-3">
                                 <a class="nav-link nav-link-box" href="../views/iniciar_sesion.html">Iniciar sesión</a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link nav-link-box" href="../views/registro.html">Registrarse</a>
+                                <a class="nav-link nav-link-box" href="">Registrarse</a>
                             </li>
                         </ul>
                     </ul>
@@ -105,40 +105,79 @@
     
     <!-- Contenido de la página -->
     <div>
-        <content id="newsletter">
-
-                <div class="container">                
-                    <div class="mx-auto text-justify" style="max-width: 600px;">
-
-                        <!-- Formulario para recibir newsletter -->
-                        <div class="card shadow-lg p-5">
-                            <h2>Suscribir Newsletter</h2>
-                            <hr><br>
-                            
-                            <p>Suscríbete a nuestro newsletter para recibir las últimas noticias, promociones exclusivas y consejos útiles para el cuidado de tu mascota.</p>
-                            <br>
-                            <form action="#" method="POST">
-                                <div class="mb-3">
-                                    <label for="username" class="form-label">Nombres</label>
-                                    <input type="text" class="form-control" placeholder="Ingresa tu nombre completo" id="nombre_completo" name="nombre_completo" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="username" class="form-label">Apellidos</label>
-                                    <input type="text" class="form-control" placeholder="Ingresa tu nombre completo" id="nombre_completo" name="nombre_completo" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Correo Electrónico</label>
-                                    <input type="email" class="form-control" placeholder="Ingrese su email" id="correo_electronico" name="correo_electronico" required>
-                                </div>
-                                <button type="submit" class="btn btn-primary" onclick="mostrarAlertaExitoNewsletter()">Suscribirse</button>
-                            </form>
+        <section id="registro">
+            <div class="container">
+                <div class="mx-auto text-justify" style="max-width: 600px;">
+                    <!-- Formulario de registro -->
+                    <div class="card shadow-lg p-5">
+                        <h2>Formulario de Registro</h2>
+                        <hr><br>
+                    <p>Completa el formulario para registrarte.</p>
+                    <br>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="rut" class="form-label">Rut</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu RUT" id="rut" name="rut" required>
                         </div>
-                        
-                    </div>
-
-                </div>            
-        </content>
-    </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tus apellidos" id="apellidos" name="apellidos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" placeholder="Ingrese su email" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" placeholder="Ingresa tu teléfono" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="calle" class="form-label">Calle</label>
+                            <input type="text" class="form-control" placeholder="Ingresa tu calle" id="calle" name="calle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero" class="form-label">Número</label>
+                            <input type="text" class="form-control" placeholder="Ingresa el número" id="numero" name="numero" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="departamento" class="form-label">Departamento</label>
+                            <input type="text" class="form-control" placeholder="Ingresa el departamento (opcional)" id="departamento" name="departamento">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comuna" class="form-label">Comuna</label>
+                            <select class="form-control" id="comuna" name="comuna" required>
+                                <option value="">Selecciona una comuna</option>
+                                <option value="Santiago">Santiago</option>
+                                <option value="Providencia">Providencia</option>
+                                <option value="Las Condes">Las Condes</option>
+                                <option value="Ñuñoa">Ñuñoa</option>
+                                <option value="Maipú">Maipú</option>
+                                <!-- se debe poblar la tabla con todas las comunas -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="region" class="form-label">Región</label>
+                            <select class="form-control" id="region" name="region" required>
+                                <option value="">Selecciona una región</option>
+                                <option value="Metropolitana">Metropolitana</option>
+                                <option value="Valparaíso">Valparaíso</option>
+                                <option value="Biobío">Biobío</option>
+                                <option value="Araucanía">Araucanía</option>
+                                <option value="Coquimbo">Coquimbo</option>
+                                <!-- se debe poblar la tabla con todas las regiones -->
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-primary" onclick="mostrarAlertaExitoRegistro()">Registrarse</button>
+                    </form>
+                </div>
+            </div>
+        </div>            
+    </section>
+</div>
 
     <!-- Footer de la página-->
     <div id="pie_pagina">

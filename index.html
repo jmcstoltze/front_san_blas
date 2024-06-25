@@ -34,23 +34,23 @@
                 <div class="collapse navbar-collapse" id="navbarNav">    
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="">Inicio</a>
+                            <a class="nav-link" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="">Servicios</a>
+                            <a class="nav-link" href="views/iniciar_sesion.html">Reservar</a>
                         </li>                         
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="">Nosotros</a>
-                        </li>                                                                  
+                            <a class="nav-link" href="views/iniciar_sesion.html">Vacunatorio</a>
+                        </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="">Contacto</a>
+                            <a class="nav-link" href="views/contacto.html">Contacto</a>
                         </li>                                            
                         <ul class="navbar-nav">
                             <li class="nav-item p-3">
                                 <a class="nav-link nav-link-box" href="views/iniciar_sesion.html">Iniciar sesión</a>
                             </li>
                             <li class="nav-item p-3">
-                                <a class="nav-link nav-link-box" href="">Registrarse</a>
+                                <a class="nav-link nav-link-box" href="views/registro.html">Registrarse</a>
                             </li>
                         </ul>
                     </ul>
@@ -105,22 +105,40 @@
     
     <!-- Contenido de la página -->
     <div>
-        <content id="bienvenida">
-            
+        <content id="bienvenida">            
                 <div class="container">
-                
-                    <div class="mx-auto text-justify" style="max-width: 600px;">
-
-                        <!-- Contenedor sombreado tipo card-->
-                        <div class="card shadow-lg p-5">
-                            <h2>Veterinaria San Blas</h2>
-                            <hr><br>
-                            <p>Nos enorgullecemos de ofrecer una amplia gama de servicios veterinarios, desde consultas y chequeos de rutina hasta procedimientos quirúrgicos menores y cuidados preventivos.</p>
-                            <p>Entendemos que cada mascota es un miembro invaluable de la familia, y tratamos a cada uno de nuestros pacientes con la misma dedicación y cariño que tú les das en casa.</p>
-                            <p>Gracias por confiar en Veterinaria San Blas. Esperamos poder servirte a ti y a tu mascota con el más alto nivel de atención y cuidado.</p>
+                    <div class="row">
+                        <div class="col-lg-4 mb-4">                            
+                            <a href="views/iniciar_sesion.html" class="no-underline">
+                                <!-- Contenedor sombreado tipo card-->
+                                <div class="card shadow-lg p-5 custom-card" style="background-color: #87cf56;">
+                                    <h2>Reserva tu Hora</h2>
+                                    <hr><br>
+                                    <img src="assets/img/card1.jpg" class="card-img custom-width" alt="Card1">
+                                </div>
+                            </a>
                         </div>
-                    </div>
+                        <div class="col-lg-4 mb-4">                            
+                                <!-- Contenedor sombreado tipo card-->
+                                <div class="card shadow-lg p-5">
+                                    <h2>Veterinaria San Blas</h2>
+                                    <hr><br>
+                                    <p>Ofrecemos una amplia gama de servicios, desde consultas hasta procedimientos quirúrgicos y cuidados preventivos.</p>
+                                    <p>Cada mascota es un miembro invaluable de la familia, y tratamos a cada uno de nuestros pacientes con la misma dedicación y cariño.</p>                                    
+                                </div>                            
+                        </div>
+                        <div class="col-lg-4 mb-4">
+                            <a href="views/iniciar_sesion.html" class="no-underline">
 
+                                <!-- Contenedor sombreado tipo card-->
+                                <div class="card shadow-lg p-5 custom-card" style="background-color: #7264C9;">
+                                    <h2>Vacunatorio</h2>
+                                    <hr><br>
+                                    <img src="assets/img/card2.jpg" class="card-img custom-width" alt="Card2">
+                                </div>
+                            </a>
+                        </div>                                       
+                    </div>                    
                 </div>            
         </content>
     </div>
