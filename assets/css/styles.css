@@ -49,6 +49,16 @@ body {
   height: 300px;
 }
 
+/* Estilo para los breadcrumbs*/
+.breadcrumb-link {
+  text-decoration: none;
+  color: black;
+}
+
+.breadcrumb li {
+  font-style: italic;
+}
+
 #bienvenida {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
