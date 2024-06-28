@@ -168,7 +168,7 @@ body {
 }
 
 #dashboard .custom-width {
-  width: 183px;
+  width: 198px;
 }
 
 #dashboard .custom-card {
@@ -176,7 +176,7 @@ body {
 }
 
 #dashboard .custom-card hr {
-  width: 100%; /* Para que no desaparezca el hr*/
+  width: 100%;
 }
 
 #dashboard .no-underline {
@@ -187,6 +187,7 @@ body {
   text-decoration: none;
 }
 
+/* Estilo para el registro de mascota */
 #registro_mascota {
   font-family: "Ubuntu", sans-serif;
   font-size: 16px;
@@ -210,6 +211,200 @@ body {
 }
 
 #registro_mascota .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+/* Estilo para el perfil de usuario */
+#perfil_usuario {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#perfil_usuario .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#perfil_usuario h2 {
+  text-align: center;
+}
+
+#perfil_usuario p {
+  text-align: justify;
+}
+
+#perfil_usuario .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#perfil_usuario .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+/* Icono de usuario */
+.no-underline {
+  text-decoration: none;
+  color: black;
+}
+
+
+#listado_mascotas {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#listado_mascotas .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#listado_mascotas h2 {
+  text-align: center;
+}
+
+#listado_mascotas p {
+  text-align: justify;
+}
+
+#listado_mascotas .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#listado_mascotas .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#reserva {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#reserva .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#reserva h2 {
+  text-align: center;
+}
+
+#reserva p {
+  text-align: justify;
+}
+
+#reserva .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#reserva .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#vacunatorio_menu {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#vacunatorio_menu .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#vacunatorio_menu h2 {
+  text-align: center;
+}
+
+#vacunatorio_menu p {
+  text-align: justify;
+}
+
+#vacunatorio_menu .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#vacunatorio_menu .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#vacunas_mascota {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#vacunas_mascota .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#vacunas_mascota h2 {
+  text-align: center;
+}
+
+#vacunas_mascota p {
+  text-align: justify;
+}
+
+#vacunas_mascota .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#vacunas_mascota .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#contacto {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#contacto .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#contacto h2 {
+  text-align: center;
+}
+
+#contacto p {
+  text-align: justify;
+}
+
+#contacto .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#contacto .btn:hover {
   background-color: #5f9e3e;
   border-color: #5f9e3e;
 }

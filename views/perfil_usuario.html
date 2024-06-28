@@ -35,26 +35,31 @@
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
                             <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>                       
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="reserva_hora.html">Reservar</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="../views/iniciar_sesion.html">Reservar</a>
-                        </li>                         
+                            <a class="nav-link" href="vacunatorio.html">Vacunatorio</a>
+                        </li>                                                                     
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="../views/iniciar_sesion.html">Vacunatorio</a>
-                        </li>                                                                  
-                        <li class="nav-item p-3">
-                            <a class="nav-link" href="../views/contacto.html">Contacto</a>
+                            <a class="nav-link" href="">Comentarios</a>
                         </li>                                            
                         <ul class="navbar-nav">
                             <li class="nav-item p-3">
-                                <a class="nav-link nav-link-box" href="">Iniciar sesión</a>
-                            </li>
-                            <li class="nav-item p-3">
-                                <a class="nav-link nav-link-box" href="../views/registro.html">Registrarse</a>
-                            </li>
+                                <a class="nav-link nav-link-box" href="../index.html">Cerrar Sesión</a>
+                            </li>                            
                         </ul>
                     </ul>
                 </div>
+
+                <!-- Imagen genérica de usuario y nombre -->                
+                <a href="perfil_usuario.html" class="no-underline">
+                    <div class="nav-item p-3">
+                        <img src="../assets/img/generic_user.jpg" alt="User Icon" class="rounded me-2" width="40">
+                        <span>María López</span>
+                    </div>                    
+                </a>                    
             </div>
         </nav>
     </div>    
@@ -102,41 +107,60 @@
             </div>
         </header>
     </div>
-    
+
+    <!-- Breadcrumbs -->
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Inicio</a></li>
+                <li class="breadcrumb-item"><a href="dashboard.html" class="breadcrumb-link">Dashboard</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Perfil Usuario</li>
+            </ol>
+        </nav>
+    </div>
+
     <!-- Contenido de la página -->
     <div>
-        <content id="inicio_sesion">
+        <content id="perfil_usuario">
 
                 <div class="container">                
                     <div class="mx-auto text-justify" style="max-width: 600px;">
 
-                        <!-- Contenedor sombreado tipo card-->
+                        <!-- Perfil de usuario -->
                         <div class="card shadow-lg p-5">
-                            <h2>Inicio de Sesión</h2>
+                            <h2>Perfil de Usuario</h2>
                             <hr><br>
-                            <!-- Formulario de inicio de sesión -->
-                            <!-- <form action="#" method="POST"> -->
-                            
-                            <form>
-                                <div class="mb-3">
-                                    <label for="username" class="form-label">Nombre de Usuario</label>
-                                    <input type="text" class="form-control" placeholder="Ingrese nombre de usuario" id="username" name="username" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="password" class="form-label">Contraseña</label>
-                                    <input type="password" class="form-control" placeholder="Ingrese contraseña" id="password" name="password" required>
-                                </div>
-                                <a href="dashboard.html" class="btn btn-primary">Iniciar Sesión</a>
-                            </form>
-                
-                            <!-- Enlace para registro -->
-                            <div class="mt-3">
-                                ¿No estás registrado? <a href="../views/registro.html">Regístrate aquí</a>
+                                                                                
+                            <!-- Campos subdivididos -->
+                            <div class="list-group">
+                                <span class="list-group-item list-group-item-action">                                    
+                                        <h5 class="mb-1">Nombre</h5>
+                                        <p class="mb-1">María López</p>                                        
+                                </span>
+                                <span class="list-group-item list-group-item-action">
+                                    <h5 class="mb-1">Contacto</h5>
+                                        <p class="mb-1">Email: maria_lopez@mail.com</p>
+                                        <p class="mb-1">Teléfono: +569 9999999</p>                                
+                                </span>
+                                <span class="list-group-item list-group-item-action">
+                                    <h5 class="mb-1">Dirección</h5>
+                                        <p class="mb-1">Av Siempre Viva 543 Depto 21</p>
+                                        <p class="mb-1">Recoleta, Región Metropolitana</p>                                
+                                </span>
+                                <span class="list-group-item list-group-item-action">
+                                    
+                                    <p>
+                                        <a href="reserva_hora.html">Reservar cita | </a>
+                                        <a href="mascotas.html">Tus mascotas | </a>
+                                        <a href="">Deja tus comentarios</a>
+                                    </p>
+                                    
+                                </span>                                  
                             </div>
-                        </div>
-                        
+                            <br>
+                            <a href="actualizar_usuario.html" class="btn btn-primary">Editar datos</a>
+                        </div>                        
                     </div>
-
                 </div>            
         </content>
     </div>
@@ -155,10 +179,10 @@
                 <br><br>
                 <!-- Enlace para suscribirse al newsletter -->
             <div>
-            <div>
-                <a href="../views/contacto.html">Formulario de Contacto |</a>
-                <a href="../views/newsletter.html">Suscríbete a nuestro Newsletter</a>
-            </div>
+                <div>
+                    <a href="../views/contacto.html">Formulario de Contacto |</a>
+                    <a href="../views/newsletter.html">Suscríbete a nuestro newsletter</a>
+                </div>
             <hr>
             </div>
                 <span>© 2024 Veterinaria San Blas</span>
