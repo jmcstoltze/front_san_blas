@@ -141,7 +141,11 @@
                             </div>
                             <div class="mb-3">
                                 <label for="especie" class="form-label">Especie</label>
-                                <input type="text" class="form-control" placeholder="Ingresa la especie (ej. Perro, Gato)" id="especie" name="especie" required>
+                                <select class="form-control" id="especie" name="especie" required>
+                                    <option value="">Selecciona la especie de la mascota</option>
+                                    <option value="Canina">Canina</option>
+                                    <option value="Felina">Felina</option>
+                                </select>
                             </div>
                             <div class="mb-3">
                                 <label for="raza" class="form-label">Raza</label>
@@ -160,9 +164,9 @@
                                 </select>
                             </div>
                             <div class="mb-3">
-                                <label for="esterilizado" class="form-label">Esterilizado</label>
+                                <label for="esterilizado" class="form-label">Esterilizada</label>
                                 <select class="form-control" id="esterilizado" name="esterilizado" required>
-                                    <option value="">¿Está esterilizado?</option>
+                                    <option value="">¿Está esterilizada?</option>
                                     <option value="Sí">Sí</option>
                                     <option value="No">No</option>
                                 </select>

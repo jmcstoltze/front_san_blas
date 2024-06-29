@@ -55,9 +55,10 @@ body {
   color: black;
 }
 
+/*
 .breadcrumb li {
   font-style: italic;
-}
+}*/
 
 #bienvenida {
   font-family: "Ubuntu", sans-serif;
@@ -376,6 +377,41 @@ body {
 #vacunas_mascota .btn:hover {
   background-color: #5f9e3e;
   border-color: #5f9e3e;
+}
+
+#comentarios {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#comentarios .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#comentarios h2 {
+  text-align: center;
+}
+
+#comentarios p {
+  text-align: justify;
+}
+
+#comentarios .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#comentarios .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+.custom-comment {
+  font-style: italic;
 }
 
 #contacto {

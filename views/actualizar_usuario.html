@@ -35,31 +35,26 @@
                     <ul class="navbar-nav">
                         <li class="nav-item p-3">
                             <a class="nav-link" href="../index.html">Inicio</a>
-                        </li>                       
-                        <li class="nav-item p-3">
-                            <a class="nav-link" href="reserva_hora.html">Reservar</a>
                         </li>
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="vacunatorio.html">Vacunatorio</a>
-                        </li>                                                                     
+                            <a class="nav-link" href="reserva_hora.html">Reservar</a>
+                        </li>                         
                         <li class="nav-item p-3">
-                            <a class="nav-link" href="">Comentarios</a>
+                            <a class="nav-link" href="vacunatorio.html">Vacunatorio</a>
+                        </li>                                                                  
+                        <li class="nav-item p-3">
+                            <a class="nav-link" href="../views/contacto.html">Contacto</a>
                         </li>                                            
                         <ul class="navbar-nav">
                             <li class="nav-item p-3">
-                                <a class="nav-link nav-link-box" href="../index.html">Cerrar Sesión</a>
-                            </li>                            
+                                <a class="nav-link nav-link-box" href="../views/iniciar_sesion.html">Iniciar sesión</a>
+                            </li>
+                            <li class="nav-item p-3">
+                                <a class="nav-link nav-link-box" href="">Registrarse</a>
+                            </li>
                         </ul>
                     </ul>
                 </div>
-
-                <!-- Imagen genérica de usuario y nombre -->                
-                <a href="perfil_usuario.html" class="no-underline">
-                    <div class="nav-item p-3">
-                        <img src="../assets/img/generic_user.jpg" alt="User Icon" class="rounded me-2" width="40">
-                        <span>María López</span>
-                    </div>                    
-                </a>                    
             </div>
         </nav>
     </div>    
@@ -114,56 +109,86 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="../index.html" class="breadcrumb-link">Inicio</a></li>
                 <li class="breadcrumb-item"><a href="dashboard.html" class="breadcrumb-link">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Perfil Usuario</li>
+                <li class="breadcrumb-item"><a href="perfil_usuario.html" class="breadcrumb-link">Perfil Usuario</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Editar Información</li>
             </ol>
         </nav>
     </div>
-
+    
     <!-- Contenido de la página -->
     <div>
-        <content id="perfil_usuario">
-
-                <div class="container">                
-                    <div class="mx-auto text-justify" style="max-width: 600px;">
-
-                        <!-- Perfil de usuario -->
-                        <div class="card shadow-lg p-5">
-                            <h2>Perfil de Usuario</h2>
-                            <hr><br>
-                                                                                
-                            <!-- Campos subdivididos -->
-                            <div class="list-group">
-                                <span class="list-group-item list-group-item-action">                                    
-                                        <h5 class="mb-1">Nombre</h5>
-                                        <p class="mb-1">María López</p>                                        
-                                </span>
-                                <span class="list-group-item list-group-item-action">
-                                    <h5 class="mb-1">Contacto</h5>
-                                        <p class="mb-1">Email: maria_lopez@mail.com</p>
-                                        <p class="mb-1">Teléfono: +569 9999999</p>                                
-                                </span>
-                                <span class="list-group-item list-group-item-action">
-                                    <h5 class="mb-1">Dirección</h5>
-                                        <p class="mb-1">Av Siempre Viva 543 Depto 21</p>
-                                        <p class="mb-1">Recoleta, Región Metropolitana</p>                                
-                                </span>
-                                <span class="list-group-item list-group-item-action">
-                                    
-                                    <p>
-                                        <a href="reserva_hora.html">Reservar cita | </a>
-                                        <a href="mascotas.html">Tus mascotas | </a>
-                                        <a href="">Deja tus comentarios | </a>
-                                        <a href="dashboard.html">Volver</a>
-                                    </p>
-                                    
-                                </span>                                  
-                            </div>
-                            <br>
-                            <a href="actualizar_usuario.html" class="btn btn-primary">Editar datos</a>
-                        </div>                        
-                    </div>
-                </div>            
-        </content>
+        <section id="registro">
+            <div class="container">
+                <div class="mx-auto text-justify" style="max-width: 600px;">
+                    <!-- Formulario de registro -->
+                    <div class="card shadow-lg p-5">
+                        <h2>Editar Información</h2>
+                        <hr><br>
+                    <p>Actualiza la información de tu perfil.</p>
+                    <br>
+                    <form action="#" method="POST">
+                        <div class="mb-3">
+                            <label for="rut" class="form-label">Rut</label>
+                            <input type="text" class="form-control" value="1111-1" placeholder="Ingresa tu RUT" id="rut" name="rut" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" value="María" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="apellidos" class="form-label">Apellidos</label>
+                            <input type="text" class="form-control" value="López" placeholder="Ingresa tus apellidos" id="apellidos" name="apellidos" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo Electrónico</label>
+                            <input type="email" class="form-control" value="maria_lopez@mail.com" placeholder="Ingrese su email" id="email" name="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label">Teléfono</label>
+                            <input type="tel" class="form-control" value="+569 9999999" placeholder="Ingresa tu teléfono" id="telefono" name="telefono" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="calle" class="form-label">Calle</label>
+                            <input type="text" class="form-control" value="Av Siempre Viva" placeholder="Ingresa tu calle" id="calle" name="calle" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="numero" class="form-label">Número</label>
+                            <input type="text" class="form-control" value="21" placeholder="Ingresa el número" id="numero" name="numero" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="departamento" class="form-label">Departamento</label>
+                            <input type="text" class="form-control" value="21" placeholder="Ingresa el departamento (opcional)" id="departamento" name="departamento">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comuna" class="form-label">Comuna</label>
+                            <select class="form-control" id="comuna" name="comuna" required>
+                                <option>Recoleta</option>
+                                <option value="Santiago">Santiago</option>
+                                <option value="Providencia">Providencia</option>
+                                <option value="Las Condes">Las Condes</option>
+                                <option value="Ñuñoa">Ñuñoa</option>
+                                <option value="Maipú">Maipú</option>
+                                <!-- se debe poblar la tabla con todas las comunas -->
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="region" class="form-label">Región</label>
+                            <select class="form-control" id="region" name="region" required>
+                                <option>Metropolitana</option>
+                                <option value="Metropolitana">Metropolitana</option>
+                                <option value="Valparaíso">Valparaíso</option>
+                                <option value="Biobío">Biobío</option>
+                                <option value="Araucanía">Araucanía</option>
+                                <option value="Coquimbo">Coquimbo</option>
+                                <!-- se debe poblar la tabla con todas las regiones -->
+                            </select>
+                        </div>
+                        <a href="perfil_usuario.html" class="btn btn-primary">Actualizar Información</a>
+                        <!-- <button type="submit" class="btn btn-primary" onclick="">Actualizar</button> -->
+                    </form>
+                </div>
+            </div>        
+        </section>
     </div>
 
     <!-- Footer de la página-->
@@ -181,8 +206,8 @@
                 <!-- Enlace para suscribirse al newsletter -->
             <div>
                 <div>
-                    <a href="../views/contacto.html">Formulario de Contacto |</a>
-                    <a href="../views/newsletter.html">Suscríbete a nuestro newsletter</a>
+                    <a href="../views/contacto.html">Formulario de Contacto | </a>
+                    <a href="../views/newsletter.html">Suscríbete a nuestro Newsletter</a>
                 </div>
             <hr>
             </div>
@@ -194,7 +219,7 @@
     <!-- JavaScript-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="assets/js/script.js"></script>        
+    <script src="../assets/js/script.js"></script>        
 
   </body>
 </html>
