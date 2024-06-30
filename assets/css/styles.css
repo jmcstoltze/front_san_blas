@@ -476,6 +476,135 @@ body {
   border-color: #5f9e3e;
 }
 
+/* Estilos de vistas relacionadas con admin */
+
+#listado_pacientes {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#listado_pacientes .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#listado_pacientes h2 {
+  text-align: center;
+}
+
+#listado_pacientes p {
+  text-align: justify;
+}
+
+#listado_pacientes .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#listado_pacientes .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#perfil_paciente {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#perfil_paciente .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#perfil_paciente h2 {
+  text-align: center;
+}
+
+#perfil_paciente p {
+  text-align: justify;
+}
+
+#perfil_paciente .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#perfil_paciente .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+.btn-delete {
+  color: white;
+}
+
+#perfil_cliente {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#perfil_cliente .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#perfil_cliente h2 {
+  text-align: center;
+}
+
+#perfil_cliente p {
+  text-align: justify;
+}
+
+#perfil_cliente .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#perfil_cliente .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
+
+#agenda {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#agenda .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+  text-align: justify;
+}
+
+#agenda h2 {
+  text-align: center;
+}
+
+#agenda p {
+  text-align: justify;
+}
+
+#agenda .btn {
+  background-color: #87cf56;
+  border-color: #87cf56;
+}
+
+#agenda .btn:hover {
+  background-color: #5f9e3e;
+  border-color: #5f9e3e;
+}
 
 #pie_pagina {
   color: white;
@@ -503,10 +632,11 @@ body {
 
 @media (max-width: 575.98px) {
 
+  /*
   #bienvenida .container {
     padding-left: 50px !important;
     padding-right: 50px !important;
-  }
+  } */
 
   #pie_pagina .container {
     padding-left: 50px;
